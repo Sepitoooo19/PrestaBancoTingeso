@@ -1,47 +1,46 @@
 package com.example.proyectoTingeso.entities;
 
-
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 @Entity
-@Table(name = "client")
-@Getter
-@Setter
-
-
+@Table(name = "cliententity")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ClientEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
-    private Long Client_id;
+    private Long id;
 
-    @Column(name = "FullName")
-    private String FullName;
+    @Column(name = "rut")
+    private String rut;
 
-    @Column(name = "Rut")
-    private String Rut;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "Email")
-    private String Email;
+    @Column(name = "email")
+    private String email;
 
-    @Column(name = "Phone")
-    private String Phone;
+    @Column(name = "phone")
+    private String phone;
 
-    @Column(name = "Address")
-    private String Address;
+    @Column(name = "monthlySalary")
+    private double monthlySalary;
 
-    @Column(name = "monthlyIncome")
-    private int monthlyIncome;
+    @Column(name = "personalSavings")
+    private Double personalSavings;
 
     @Column(name = "jobSeniority")
     private int jobSeniority;
 
     @Column(name = "jobType")
     private String jobType;
-
-
 
 }
