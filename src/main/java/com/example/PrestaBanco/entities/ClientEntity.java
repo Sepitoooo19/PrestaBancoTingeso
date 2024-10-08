@@ -1,4 +1,4 @@
-package com.example.proyectoTingeso.entities;
+package com.example.PrestaBanco.entities;
 
 import jakarta.persistence.*;
 
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name = "cliententity")
+@Table(name = "clients")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

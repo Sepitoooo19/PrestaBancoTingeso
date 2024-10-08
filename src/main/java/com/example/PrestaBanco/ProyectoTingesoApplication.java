@@ -1,4 +1,4 @@
-package com.example.proyectoTingeso;
+package com.example.PrestaBanco;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

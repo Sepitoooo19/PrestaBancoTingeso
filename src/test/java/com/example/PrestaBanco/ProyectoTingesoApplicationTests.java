@@ -1,4 +1,4 @@
-package com.example.proyectoTingeso;
+package com.example.PrestaBanco;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
